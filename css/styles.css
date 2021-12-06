@@ -15,6 +15,8 @@
 /* Убирает точки */
 ul {
   list-style: none;
+  margin: 0px;
+  padding: 0px;
 }
 /* Задает цвет основному шрифту */
 body {
@@ -33,7 +35,49 @@ a {
   color: var(--main-txt-color);
 }
 
+/* .header {
+  width: 1600px;
+  height: 80px;
+  background-color: var(--sub-txt-color); */
+
+/* .container {
+  width: 1200px;
+
+  background-color: var(--section1-background-color);
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+} */
 /* Стилизация хедера nav */
+.header {
+  display: flex;
+  width: 1600px;
+  height: 80px;
+  background-color: var(--sub-txt-color);
+  margin-left: auto;
+  margin-right: auto;
+
+  /* Установит стили нинжней рамки */
+  border-bottom-width: 7px;
+  border-bottom-style: solid;
+  border-bottom-color: palevioletred;
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 215px;
+  width: 1200px;
+  background-color: var(--sub-txt-color);
+}
+
+.link-box {
+  margin-left: auto;
+}
+.nav-container {
+  display: flex;
+  align-items: center;
+}
 .logo {
   color: var(--logo-footer-color);
   font-family: raleway, sans-serif;
@@ -101,6 +145,11 @@ a {
   text-align: center;
   letter-spacing: 0.06em;
   font-weight: 700;
+  width: 200px;
+  height: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 4px;
 }
 .button:hover,
 .button:focus {
@@ -115,8 +164,26 @@ a {
   font-weight: 400;
 }
 /* Стилизация секция 1 */
+.main-section {
+}
+.main-sectionbox {
+  width: 1600px;
+  height: 600px;
+  background-color: var(--section1-background-color);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 94px;
+}
+
 .heading {
   color: var(--sub-txt-color);
+  font-size: 44px;
+  margin-top: 0px;
+  margin-bottom: 30px;
 }
 .main-heading {
   font-size: 44px;
@@ -129,9 +196,40 @@ a {
   line-height: 1.14;
   font-weight: 700;
   color: var(--main-txt-color);
+  height: 16px;
+  margin-top: 0px;
+  margin-bottom: 10px;
 }
 .worck-content {
   line-height: 1.71;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  height: 75px;
+}
+.section-box {
+  display: flex;
+  flex-direction: column;
+  width: 1170px;
+  height: 101px;
+
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 94px;
+}
+.section {
+  width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.li-content {
+  width: 270px;
+  /* /* margin-left: 30px; */
+}
+.section-content {
+  display: flex;
+}
+.section-content .li-content + .li-content {
+  margin-left: 30px;
 }
 /* Стилизация секция 3*/
 .our-activities {
@@ -139,6 +237,24 @@ a {
   font-size: 36px;
   line-height: 1.17;
   color: var(--main-txt-color);
+  margin-top: 0px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.section-worck .li-worck + .li-worck {
+  margin-left: 30px;
+}
+.section-worck {
+  display: flex;
+  flex-direction: row;
+}
+.worck-box {
+  width: 1170px;
+  height: 386px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 96px;
 }
 /* Стилизация секция 4 */
 .worck-team {
@@ -146,12 +262,50 @@ a {
   line-height: 1.18;
   font-weight: 500;
   color: var(--main-txt-color);
+  text-align: center;
 }
 .person {
   font-size: 16px;
   line-height: 1.18;
   color: var(--txt-color);
+  text-align: center;
 }
+.our-team {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+
+  width: 1170px;
+  height: 368px;
+}
+.teamsection-box {
+  display: flex;
+  margin-bottom: 94px;
+  margin-top: auto;
+}
+.end-section {
+  display: flex;
+
+  flex-direction: column;
+  padding-top: 94px;
+}
+.our-team .li-team + .li-team {
+  margin-left: 30px;
+}
+.li-team {
+  width: 270px;
+  height: 368px;
+  background-color: var(--sub-txt-color);
+}
+.our-section {
+  width: 1600px;
+  height: 648px;
+  margin-left: auto;
+  margin-right: auto;
+
+  background-color: var(--section-background-color);
+}
+
 /* Стилизация футера */
 .footer-contact {
   color: var(--txt-color);
@@ -190,4 +344,21 @@ a {
   line-height: 1.19;
   font-weight: 700;
   text-decoration: none;
+}
+.nav {
+  display: flex;
+  margin-left: 93px;
+}
+
+/* .nav .item:last-child {
+  margin-right: 0; */
+/* } */
+.nav .item + .item {
+  margin-left: 50px;
+}
+.auth-nav {
+  display: flex;
+}
+.auth-nav .item + .item {
+  margin-left: 50px;
 }
