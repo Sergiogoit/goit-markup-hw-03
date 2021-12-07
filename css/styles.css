@@ -58,9 +58,9 @@ a {
   margin-right: auto;
 
   /* Установит стили нинжней рамки */
-  border-bottom-width: 7px;
+  border-bottom-width: 1px;
   border-bottom-style: solid;
-  border-bottom-color: palevioletred;
+  border-bottom-color: var(--section2-background-color);
 }
 .container {
   display: flex;
@@ -313,6 +313,7 @@ a {
   letter-spacing: 0.03em;
   font-weight: 400;
   font-style: normal;
+  margin-bottom: 9px;
 }
 .footer-adress {
   color: var(--txt-color);
@@ -320,6 +321,19 @@ a {
   letter-spacing: 0.03em;
   font-weight: 400;
   font-style: normal;
+  margin-bottom: 9px;
+}
+.footer {
+  width: 1600px;
+  height: 252px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: var(--section1-background-color);
+}
+.address {
+  width: 231px;
+  height: 81px;
+  margin-left: 215px;
 }
 /* Вторая страница */
 .sub-title {
@@ -336,6 +350,8 @@ a {
   line-height: 1.19;
   font-weight: 700;
   text-decoration: none;
+
+  display: flex;
 }
 .studio {
   color: var(--logo-footer-color);
@@ -344,6 +360,26 @@ a {
   line-height: 1.19;
   font-weight: 700;
   text-decoration: none;
+}
+.studio-footer {
+  color: var(--sub-txt-color);
+  font-family: raleway, sans-serif;
+  font-size: 26px;
+  line-height: 1.19;
+  font-weight: 700;
+  text-decoration: none;
+}
+.web-footer {
+  color: var(--heder-link-color);
+  font-family: raleway, sans-serif;
+  font-size: 26px;
+  line-height: 1.19;
+  font-weight: 700;
+  text-decoration: none;
+  margin-left: 215px;
+  display: flex;
+  padding-top: 60px;
+  margin-bottom: 20px;
 }
 .nav {
   display: flex;
