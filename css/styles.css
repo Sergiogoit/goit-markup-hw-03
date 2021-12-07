@@ -67,6 +67,7 @@ a {
   align-items: center;
   justify-content: center;
   margin-left: 215px;
+  margin-right: 215px;
   width: 1200px;
   background-color: var(--sub-txt-color);
 }
