@@ -51,7 +51,7 @@ a {
 /* Стилизация хедера nav */
 .header {
   display: flex;
-  width: 1600px;
+  max-width: 1600px;
   height: 80px;
   background-color: var(--sub-txt-color);
   margin-left: auto;
@@ -66,8 +66,8 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-left: 215px;
-  margin-right: 215px;
+  margin-left: 40px;
+  margin-right: 40px;
   width: 1200px;
   background-color: var(--sub-txt-color);
 }
@@ -171,7 +171,7 @@ a {
 .main-section {
 }
 .main-sectionbox {
-  width: 1600px;
+  max-width: 1600px;
   height: 600px;
   background-color: var(--section1-background-color);
   text-align: center;
@@ -221,7 +221,7 @@ a {
   margin-bottom: 94px;
 }
 .section {
-  width: 1600px;
+  max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -302,7 +302,7 @@ a {
   background-color: var(--sub-txt-color);
 }
 .our-section {
-  width: 1600px;
+  max-width: 1600px;
   height: 648px;
   margin-left: auto;
   margin-right: auto;
@@ -328,7 +328,7 @@ a {
   margin-bottom: 9px;
 }
 .footer {
-  width: 1600px;
+  max-width: 1600px;
   height: 252px;
   margin-left: auto;
   margin-right: auto;
@@ -337,7 +337,7 @@ a {
 .address {
   width: 231px;
   height: 81px;
-  margin-left: 215px;
+  margin-left: 40px;
 }
 /* Вторая страница */
 .sub-title {
@@ -381,7 +381,7 @@ a {
   line-height: 1.19;
   font-weight: 700;
   text-decoration: none;
-  margin-left: 215px;
+  margin-left: 40px;
   display: flex;
   padding-top: 60px;
   margin-bottom: 20px;
