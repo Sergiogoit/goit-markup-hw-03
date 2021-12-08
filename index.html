@@ -5,34 +5,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web Studio (Version 2.1)</title>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" 
+    rel="stylesheet">
     <link rel="stylesheet" href="./css/styles.css"/>
-    
-<!--Header box-->
-<header class="header">
-    <div class="container">
-            <div>
-                <nav class="nav-container">
+</head>  
+<body>
 
-                    <span class="web">Web<span class="studio">Studio</span></span>
-                    
-                    <ul class="nav">
-                        <li class="item"><a href="index.html" class="link-accent">Студия</a></li>
-                        <li class="item"><a href="portfolio.html" class="nav-link">Портфолио</a></li>
-                        <li class="item"><a href="" class="nav-link">Контакты</a></li>
-                    </ul>
+    <!--Header box-->
+    <header class="header nav-head">
+        <div class="container nav-head">
+                
+                    <nav class="nav-container">
 
-                </nav>
-            </div>
-            <div class="link-box">
-                    <ul class="auth-nav">
-                        <li class="item"><a href="mailto:info@devstudio.com" class="hader-link">info@devstudio.com</a></li>
-                        <li class="item"><a href="tel:+380961111111" class="tel-link">+38 096 111 11 11</a></li>
-                    </ul>
-            </div>
-    </div>
+                        <span class="web">Web<span class="studio">Studio</span></span>
+                        
+                        <ul class="nav">
+                            <li class="item"><a href="index.html" class="link-accent">Студия</a></li>
+                            <li class="item"><a href="portfolio.html" class="nav-link">Портфолио</a></li>
+                            <li class="item"><a href="" class="nav-link">Контакты</a></li>
+                        </ul>
 
-</header>
+                    </nav>
+            
+                <!--<div class="link-box">-->
+                        <ul class="auth-nav">
+                            <li class="item"><a href="mailto:info@devstudio.com" class="hader-link">info@devstudio.com</a></li>
+                            <li class="item"><a href="tel:+380961111111" class="tel-link">+38 096 111 11 11</a></li>
+                        </ul>
+                <!--</div>-->
+        </div>
+
+    </header>
 
     <!--Main box-->
     <main>
@@ -40,7 +43,7 @@
         <!--Section of content 1-->
             
                 <section class="main-section">
-                    <div class="main-sectionbox">
+                    <div class="container">
                         <h1 class="heading">ЭФФЕКТИВНЫЕ РЕШЕНИЯ<br>ДЛЯ ВАШЕГО БИЗНЕСА</h1>
                         <button type=button class="order-button">Заказать услугу</button>
                     </div>
@@ -48,7 +51,7 @@
             
         <!--Section of content 2-->
         <section class="section">
-            <div class="section-box">
+            <div class="container">
                 <h2 hidden>Рабочие качества</h2>
                 <ul class="section-content">
                     <li class="li-content">
@@ -75,8 +78,8 @@
         </section>
 
         <!--Section of content 3-->
-        <section>
-            <div class="worck-box">
+        <section class="section">
+            <div class="container">
                         <h2 class="our-activities">Чем мы занимаемся</h2>
                 <ul class="section-worck">
                     <li class="li-worck"><img src="./img/box1.jpg" width=370 alt="Человек работает на айпаде"></li>
@@ -88,10 +91,10 @@
         </section>
 
         <!--Section of content 4-->
-        <section class="our-section">
-            <div class="end-section">
-            <h2 class="our-activities">Наша команда</h2>
-            <div class="teamsection-box">
+        <section class="section section-color">
+            <div class="container">
+             <h2 class="our-activities">Наша команда</h2>
+               <!--<div class="teamsection-box">-->
                 <ul class="our-team">
             
                     <li class="li-team">
@@ -129,19 +132,19 @@
                         </div>
                     </li>
                 </ul>
+                               <!--</div>-->
             </div>
-        </div>
         </section>
     </main>
 
-    <!--Futter box-->
-    <footer>
-    <div class="footer">
+    <!--Footer box-->
+    <footer class="footer">
+    <div class="container nav-foot">
     
             <span class="web-footer">Web<span class="studio-footer">Studio</span></span>
 
         <address class="address">
-            <ul>
+            <ul class="ul-footer">
                 <li><a href="г.Киев,пр-тЛесиУкраинки,26" class="footer-adress">г. Киев, пр-т Леси Украинки, 26</a></li>
                 <li><a href="mailto:info@example.com" class="footer-contact">info@example.com</a></li>
                 <li><a href="tel:+380991111111" class="footer-contact">+38 099 111 11 11</a></li>

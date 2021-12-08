@@ -1,7 +1,7 @@
 /* Палитра цветов */
 :root {
   --main-txt-color: #212121;
-  --sub-txt-color: #ffffff;
+  --body-color: #ffffff;
   --txt-color: #757575;
   --heder-link-color: #2196f3;
   --logo-footer-color: #000000;
@@ -11,11 +11,10 @@
   --section-background-color: #f5f4fa;
   --activity-color: #ff0000;
 }
-
 /* Убирает точки */
 ul {
   list-style: none;
-  margin: 0px;
+  margin: 0pxpx;
   padding: 0px;
 }
 /* Задает цвет основному шрифту */
@@ -24,36 +23,28 @@ body {
   font-family: Roboto, sans-serif;
   font-size: 14px;
   letter-spacing: 0.03em;
-  background: var(--sub-txt-color);
+  background: var(--body-color);
 }
 /* Убирает подчеркивание */
 a {
   text-decoration: none;
 }
-/* Задает цвет заголовку */
-.main-title {
-  color: var(--main-txt-color);
+.container {
+  width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.nav-head {
+  display: flex;
+  align-items: center;
 }
 
-/* .header {
-  width: 1600px;
-  height: 80px;
-  background-color: var(--sub-txt-color); */
-
-/* .container {
-  width: 1200px;
-
-  background-color: var(--section1-background-color);
-  display: flex;
-  flex-direction: row;
-  align-items: baseline;
-} */
 /* Стилизация хедера nav */
 .header {
-  display: flex;
   max-width: 1600px;
   height: 80px;
-  background-color: var(--sub-txt-color);
   margin-left: auto;
   margin-right: auto;
 
@@ -62,16 +53,14 @@ a {
   border-bottom-style: solid;
   border-bottom-color: var(--section2-background-color);
 }
-.container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-left: 40px;
-  margin-right: 40px;
-  width: 1200px;
-  background-color: var(--sub-txt-color);
-}
 
+.auth-nav {
+  display: flex;
+  margin-left: auto;
+}
+.auth-nav .item + .item {
+  margin-left: 50px;
+}
 .link-box {
   margin-left: auto;
 }
@@ -99,8 +88,8 @@ a {
   letter-spacing: 0.02em;
   font-weight: 500;
 }
+
 /* Стилизация хедера контакты */
-.hader-link,
 .tel-link {
   line-height: 1.14;
   letter-spacing: 0.02em;
@@ -118,7 +107,7 @@ a {
 }
 .footer-adress:hover,
 .footer-adress:focus {
-  color: var(--sub-txt-color);
+  color: var(--body-color);
 }
 .footer-contact:hover,
 .footer-contact:focus {
@@ -131,15 +120,12 @@ a {
 .nav-link:active {
   color: var(--activity-color);
 }
-/* задает цвет ссылки тел. */
-.tel-link {
-}
+
 /* Стилизация кнопок */
 .order-button {
   background-color: var(--heder-link-color);
   color: var(--sub-txt-color);
   cursor: pointer;
-  /* font-family: inherit Унаследовать от боди font-family */
   font-family: inherit;
   font-size: 16px;
   line-height: 1.87;
@@ -152,6 +138,7 @@ a {
   margin-right: auto;
   border-radius: 4px;
 }
+
 .button:hover,
 .button:focus {
   background-color: var(--heder-link-color);
@@ -166,21 +153,18 @@ a {
   cursor: pointer;
   border-radius: 4px;
   padding: 6px 22px;
+  border: none;
 }
 /* Стилизация секция 1 */
 .main-section {
-}
-.main-sectionbox {
   max-width: 1600px;
-  height: 600px;
   background-color: var(--section1-background-color);
   text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  color: var(--body-color);
+  padding-top: 200px;
+  padding-bottom: 200px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 94px;
 }
 
 .heading {
@@ -224,13 +208,15 @@ a {
   max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 .li-content {
   width: 270px;
-  /* /* margin-left: 30px; */
 }
 .section-content {
   display: flex;
+  justify-content: space-between;
 }
 .section-content .li-content + .li-content {
   margin-left: 30px;
@@ -251,22 +237,18 @@ a {
 }
 .section-worck {
   display: flex;
-  flex-direction: row;
+  justify-content: space-between;
 }
-.worck-box {
-  width: 1170px;
-  height: 386px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 96px;
-}
+
 /* Стилизация секция 4 */
+.section-color {
+  background-color: var(--section-background-color);
+}
 .worck-team {
   font-size: 16px;
   line-height: 1.18;
   font-weight: 500;
   color: var(--main-txt-color);
-  text-align: center;
 }
 .person {
   font-size: 16px;
@@ -278,10 +260,8 @@ a {
   display: flex;
   margin-left: auto;
   margin-right: auto;
-
-  width: 1170px;
-  height: 368px;
-}
+  justify-content: space-between;
+  }
 .teamsection-box {
   display: flex;
   margin-bottom: 94px;
@@ -289,7 +269,6 @@ a {
 }
 .end-section {
   display: flex;
-
   flex-direction: column;
   padding-top: 94px;
 }
@@ -299,17 +278,9 @@ a {
 .li-team {
   width: 270px;
   height: 368px;
-  background-color: var(--sub-txt-color);
+  background-color: var(--body-color);
+  text-align: center;
 }
-.our-section {
-  max-width: 1600px;
-  height: 648px;
-  margin-left: auto;
-  margin-right: auto;
-
-  background-color: var(--section-background-color);
-}
-
 /* Стилизация футера */
 .footer-contact {
   color: var(--txt-color);
@@ -328,18 +299,25 @@ a {
   margin-bottom: 9px;
 }
 .footer {
-  max-width: 1600px;
-  height: 252px;
   margin-left: auto;
   margin-right: auto;
-  background-color: var(--section1-background-color);
+  max-width: 1600px;
+   background-color: var(--section1-background-color);
 }
-.address {
+.adress {
   width: 231px;
   height: 81px;
-  margin-left: 40px;
+  padding-bottom: 60px;
 }
+.ul-footer {
+  padding-bottom: 60px;
+}
+
 /* Вторая страница */
+/* Задает цвет заголовку */
+.main-title {
+  color: var(--main-txt-color);
+}
 .sub-title {
   font-size: 18px;
   line-height: 2;
@@ -355,7 +333,6 @@ a {
   line-height: 1.19;
   font-weight: 700;
   text-decoration: none;
-
   display: flex;
 }
 .studio {
@@ -367,7 +344,7 @@ a {
   text-decoration: none;
 }
 .studio-footer {
-  color: var(--sub-txt-color);
+  color: var(--body-color);
   font-family: raleway, sans-serif;
   font-size: 26px;
   line-height: 1.19;
@@ -381,7 +358,6 @@ a {
   line-height: 1.19;
   font-weight: 700;
   text-decoration: none;
-  margin-left: 40px;
   display: flex;
   padding-top: 60px;
   margin-bottom: 20px;
@@ -391,16 +367,7 @@ a {
   margin-left: 93px;
 }
 
-/* .nav .item:last-child {
-  margin-right: 0; */
-/* } */
 .nav .item + .item {
-  margin-left: 50px;
-}
-.auth-nav {
-  display: flex;
-}
-.auth-nav .item + .item {
   margin-left: 50px;
 }
 
@@ -415,6 +382,7 @@ a {
 .flex-contener {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .flex-element {

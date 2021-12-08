@@ -5,8 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:ital,wght@0,500;0,700;0,900;1,400&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="./css/styles.css" />
 </head>
@@ -14,34 +13,32 @@
 <body>
     
 <!--Header box-->
-<header class="header">
-    <div class="container">
-        <div>
-            <nav class="nav-container">
+<header class="header nav-head">
+    <div class="container nav-head">
 
-                <span class="web">Web<span class="studio">Studio</span></span>
+        <nav class="nav-container">
 
-                <ul class="nav">
-                    <li class="item"><a href="index.html" class="nav-link">Студия</a></li>
-                    <li class="item"><a href="portfolio.html" class="link-accent">Портфолио</a></li>
-                    <li class="item"><a href="" class="nav-link">Контакты</a></li>
-                </ul>
+            <span class="web">Web<span class="studio">Studio</span></span>
 
-            </nav>
-        </div>
-        <div class="link-box">
-            <ul class="auth-nav">
-                <li class="item"><a href="mailto:info@devstudio.com" class="hader-link">info@devstudio.com</a></li>
-                <li class="item"><a href="tel:+380961111111" class="tel-link">+38 096 111 11 11</a></li>
+            <ul class="nav">
+                <li class="item"><a href="index.html" class="nav-link">Студия</a></li>
+                <li class="item"><a href="portfolio.html" class="link-accent">Портфолио</a></li>
+                <li class="item"><a href="" class="nav-link">Контакты</a></li>
             </ul>
-        </div>
+
+        </nav>
+
+        <!--<div class="link-box">-->
+        <ul class="auth-nav">
+            <li class="item"><a href="mailto:info@devstudio.com" class="hader-link">info@devstudio.com</a></li>
+            <li class="item"><a href="tel:+380961111111" class="tel-link">+38 096 111 11 11</a></li>
+        </ul>
+        <!--</div>-->
     </div>
 
 </header>
-
- <main>
-     
-        <section>
+ <main class="section">
+        <section class="cection">
                   <h1 hidden class="main-title">Список наших проектов</h1>
  <!--Список кнопок-->
             <ul class="filter">
@@ -53,14 +50,13 @@
             </ul>
 <!--Список карточек-->
                     <h2 hidden >Основной контент</h2>
-            <div class="test-contener">
+            <div class="contener">
                 <ul class="flex-contener">
                     <li class="flex-element">
                             <a href=""><img src="img/img.jpg" width=367 alt="Фотокарточки 3 штуки">
                             <h3 class="sub-title">Технокряк</h3>
                             <p class="person">Веб-сайт</p></a>
                     </li>
-                    
                                     
                     <li class="flex-element">
                         <a href=""><img src="img/img(1).jpg" width=367 alt="Игра в баскетболл">
@@ -108,27 +104,21 @@
                     </li>
                 </ul>
             </div>
-
           </section>
-        
-    </main>
+            </main>
 
 <!--Footer box-->
-<footer>
-    <div class="footer">
-
+<footer class="footer">
+    <div class="container nav-foot">
         <span class="web-footer">Web<span class="studio-footer">Studio</span></span>
-
         <address class="address">
-            <ul>
+            <ul class="ul-footer">
                 <li><a href="г.Киев,пр-тЛесиУкраинки,26" class="footer-adress">г. Киев, пр-т Леси Украинки, 26</a></li>
                 <li><a href="mailto:info@example.com" class="footer-contact">info@example.com</a></li>
                 <li><a href="tel:+380991111111" class="footer-contact">+38 099 111 11 11</a></li>
             </ul>
-
         </address>
     </div>
 </footer>
-
 </body>
 </html>
