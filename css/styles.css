@@ -14,9 +14,10 @@
 /* Убирает точки */
 ul {
   list-style: none;
-  margin: 0pxpx;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
 }
+
 /* Задает цвет основному шрифту */
 body {
   color: var(--txt-color);
@@ -26,8 +27,10 @@ body {
   background: var(--body-color);
 }
 /* Убирает подчеркивание */
+/* Превращает в блочный элемент и убирает зазоры картинок- ссылок */
 a {
   text-decoration: none;
+  display: block;
 }
 .container {
   width: 1200px;
@@ -53,7 +56,6 @@ a {
   border-bottom-style: solid;
   border-bottom-color: var(--section2-background-color);
 }
-
 .auth-nav {
   display: flex;
   margin-left: auto;
@@ -96,6 +98,9 @@ a {
   font-weight: 500;
   color: var(--txt-color);
 }
+.hader-link {
+  color: var(--txt-color);
+}
 /* Псевдоэлементы ссылок */
 .tel-link:hover,
 .tel-link:focus,
@@ -105,10 +110,12 @@ a {
 .hader-link:focus {
   color: var(--heder-link-color);
 }
+
 .footer-adress:hover,
 .footer-adress:focus {
   color: var(--body-color);
 }
+.footer-tel:hover,
 .footer-contact:hover,
 .footer-contact:focus {
   color: var(--footer-link-color);
@@ -137,6 +144,7 @@ a {
   margin-left: auto;
   margin-right: auto;
   border-radius: 4px;
+  border: none;
 }
 
 .button:hover,
@@ -211,6 +219,10 @@ a {
   padding-top: 94px;
   padding-bottom: 94px;
 }
+.qualitie {
+  padding-bottom: 0px;
+}
+
 .li-content {
   width: 270px;
 }
@@ -249,17 +261,22 @@ a {
   line-height: 1.18;
   font-weight: 500;
   color: var(--main-txt-color);
+  margin-top: 0;
+  margin-bottom: 10px;
 }
 .person {
   font-size: 16px;
   line-height: 1.18;
   color: var(--txt-color);
-  margin-left: 24px;
+  margin: 0 0 0 0;
 }
+.person-information {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
 .our-team {
   display: flex;
-  margin-left: auto;
-  margin-right: auto;
   justify-content: space-between;
 }
 .teamsection-box {
@@ -272,15 +289,22 @@ a {
   flex-direction: column;
   padding-top: 94px;
 }
-.our-team .li-team + .li-team {
-  margin-left: 30px;
-}
+
 .li-team {
   width: 270px;
-  height: 368px;
   background-color: var(--body-color);
   text-align: center;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
 /* Стилизация футера */
 .footer-contact {
   color: var(--txt-color);
@@ -289,6 +313,13 @@ a {
   font-weight: 400;
   font-style: normal;
   margin-bottom: 9px;
+}
+.footer-tel {
+  color: var(--txt-color);
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  font-weight: 400;
+  font-style: normal;
 }
 .footer-adress {
   color: var(--txt-color);
@@ -312,6 +343,10 @@ a {
 .ul-footer {
   padding-bottom: 60px;
 }
+.nav-foot {
+  padding-top: 60px;
+  padding-bottom: 10px;
+}
 
 /* Вторая страница */
 /* Задает цвет заголовку */
@@ -324,7 +359,8 @@ a {
   letter-spacing: 0.06em;
   font-weight: 700;
   color: var(--main-txt-color);
-  margin-left: 24px;
+  margin-top: 0;
+  padding-top: 18px;
 }
 .web {
   color: var(--heder-link-color);
@@ -359,14 +395,12 @@ a {
   font-weight: 700;
   text-decoration: none;
   display: flex;
-  padding-top: 60px;
   margin-bottom: 20px;
 }
 .nav {
   display: flex;
   margin-left: 93px;
 }
-
 .nav .item + .item {
   margin-left: 50px;
 }
@@ -386,23 +420,10 @@ a {
 }
 
 .flex-element {
-  width: 366px;
+  width: 370px;
   background-color: var(--sub-txt-color);
   margin-right: 30px;
   margin-bottom: 30px;
-  /* Установит стили нинжней рамки */
-
-  border-right-style: solid;
-  border-right-width: 1px;
-  border-right-color: var(--section2-background-color);
-
-  border-left-style: solid;
-  border-left-width: 1px;
-  border-left-color: var(--section2-background-color);
-
-  border-bottom-width: 1px;
-  border-bottom-style: solid;
-  border-bottom-color: var(--section2-background-color);
 }
 
 .flex-element:nth-child(3n) {
@@ -414,14 +435,28 @@ a {
 
 .filter {
   display: flex;
-
-  margin-top: 94px;
-  margin-bottom: 34px;
-  width: 611px;
-  height: 54px;
+  justify-content: center;
+  margin-bottom: 50px;
   margin-left: auto;
   margin-right: auto;
 }
 .li-button {
   margin-left: 4px;
+}
+.card {
+  padding-left: 24px;
+  padding-bottom: 20px;
+
+  /* Установит стили нинжней рамки */
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: var(--section2-background-color);
+
+  border-right-style: solid;
+  border-right-width: 1px;
+  border-right-color: var(--section2-background-color);
+
+  border-left-style: solid;
+  border-left-width: 1px;
+  border-left-color: var(--section2-background-color);
 }
